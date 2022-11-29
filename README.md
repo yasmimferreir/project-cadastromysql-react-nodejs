@@ -1,70 +1,83 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+##  ProjetoCadastro-Client 
 
-## Available Scripts
+### 📑Explicação
 
-In the project directory, you can run:
+Projeto em desenvolvimento focado nas habilidades Full Stack, utilização no Front-end biblioteca ReactJs, back-end NodeJs, banco de dados relacional SQL.
+Desenvolvimento de tela de cadastro é confirmação dos dados,  será usado banco de dados SQL, para o armazemamento de dados referentes. Pretendo usar ****AWS Lambda.****
 
-### `npm start`
+<br>
+###  📍 Utilização
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Reactjs
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```jsx
+npx create-react-app 
+```
 
-### `npm test`
+Yarn:
+```jsx
+yarn 
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+###  💈 Rodar projeto:
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```jsx
+yarn start
+```
+<br>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 💻 Pré-requisitos
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Antes de começar, verifique se você atendeu aos seguintes requisitos:
+<!---Estes são apenas requisitos de exemplo. Adicionar, duplicar ou remover conforme necessário--->
+* Você instalou a versão mais recente de  NodeJs
+* Você tem uma máquina Windows 
 
-### `npm run eject`
+## 🚀 Instalando o projeto 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Para instalar o Quiz, siga estas etapas:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Windows: <br>
+git clone `url`.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 📫 Contribuindo para o Projeto 
+<!---Se o seu README for longo ou se você tiver algum processo ou etapas específicas que deseja que os contribuidores sigam, considere a criação de um arquivo CONTRIBUTING.md separado--->
+Para contribuir com o projeto, siga estas etapas:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Bifurque este repositório.
+2. Crie um branch: `git checkout -b <nome_branch>`.
+3. Faça suas alterações e confirme-as: `git commit -m '<mensagem_commit>'`
+4. Envie para o branch original: `git push origin <nome_do_projeto> / <local>`
+5. Crie a solicitação de pull.
 
-## Learn More
+Como alternativa, consulte a documentação do GitHub em [como criar uma solicitação pull](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🤝 Colaboradores
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Agradecemos às seguintes pessoas que contribuíram para este projeto:
 
-### Code Splitting
+<table>
+  <tr>
+    <td align="center">
+      <a href="#">
+        <img src="https://user-images.githubusercontent.com/97356148/200590856-942d44a8-f136-4320-a381-699ecbc0d6ec.JPG" width="100px;" alt="Foto Yasmim Ferreira Costa"/><br>
+        <sub>
+          <b>Yasmim Ferreira Costa</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+## 😄 Seja um dos contribuidores<br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Quer fazer parte desse projeto? Clique [AQUI](CONTRIBUTING.md) e leia como contribuir.
 
-### Making a Progressive Web App
+## 📝 Licença
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Esse projeto está sob licença. Veja o arquivo [LICENÇA](LICENSE.md) para mais detalhes.
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[⬆ Voltar ao topo](#ProjetoCadastro-lientes)<br>
