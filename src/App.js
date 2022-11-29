@@ -4,66 +4,67 @@ function App() {
   return (
     <div className="app-container">
       <div className="register--container">
-        <h1> Novo cadastro</h1>
+        <h1 className='title'> Novo cadastro <span>Cliente</span></h1>
+        <p className='paragrafh'>Preencha os dados do cadastro para acessar</p>
 
-        Nome completo:
+        <p className='principal'>Nome completo: </p>
+        <br />
         <input
           type="text"
           name="nome"
           placeholder="Nome"
           className="register--input"
         />
+        <hr className='linha' />
 
-        Email:
+        <p className='principal'> Email: </p>
         <input
           type="email"
           name="email"
           placeholder="E-mail"
           className="register--input"
         />
+        <hr className='linha' />
 
 
-        Data de nascimento:
+        <p className='principal'>Data de nascimento: </p>
         <input
           type="date"
           name="data"
           className="register--input"
         />
+        <hr className='linha' />
 
-        Cidade:
+        <p className='principal'>Cidade:</p>
         <input
           type="text"
           name="cidade"
           placeholder="cidade"
           className="register--input"
         />
+        <hr className='linha' />
 
-        Endereço:
+        <p className='principal'>
+          Endereço:</p>
         <input
           type="text"
           name="endereço"
           placeholder="Endereço"
           className="register--input"
         />
+        <hr className='linha' />
 
 
-        Telefone:
+        <p className='principal'>  Telefone:</p>
         <input
           type="number"
-          name="endetelefoneeço"
+          name="telefone"
           placeholder="Telefone"
           className="register--input"
         />
+        <hr className='linha' />
 
-
-
-
-
-
-
-
-
-
+        <button className='container--button'>Cadastrar</button>
       </div>
 
     </div>
