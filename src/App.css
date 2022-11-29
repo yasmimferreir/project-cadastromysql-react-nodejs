@@ -46,25 +46,11 @@ span {
   text-align: center;
   position: relative;
   margin: 2.6rem 0 0 12rem;
-
   font-style: normal;
   font-weight: 400;
   font-size: 1.1rem;
   line-height: 19px;
-
   color: rgba(0, 0, 0, 0.5);
-}
-
-.register--input {
-  display: block;
-  align-items: center;
-  position: relative;
-}
-
-.linha {
-  position: relative;
-  width: 25em;
-  margin-left: 4rem;
 }
 
 .principal {
@@ -81,10 +67,35 @@ span {
 }
 
 .register--input {
+  display: block;
+  align-items: center;
+  position: relative;
+  margin-top: 0.6rem;
+}
+
+.linha {
+  position: relative;
+  width: 25em;
+  margin-left: 4rem;
+}
+
+input {
   display: flex;
   border: 0;
   outline: 0;
   margin-left: 4rem;
+}
+
+input[type="date"] {
+  font-size: 0.9rem;
+  outline: none;
+  margin-top: 0.4rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-calendar-picker-indicator {
+  font-size: 1rem;
+  cursor: pointer;
 }
 
 .container--button {

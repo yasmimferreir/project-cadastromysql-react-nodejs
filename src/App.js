@@ -1,6 +1,13 @@
+//import { useState } from 'react';
 import './App.css';
+import InputMask from 'react-input-mask';
+
 
 function App() {
+  const Input = (props) => (
+    <InputMask mask="(99) 99999-9999" value={ props.value } onChange={ props.onChange } />
+  );
+
   return (
     <div className="app-container">
       <div className="register--container">
@@ -8,11 +15,11 @@ function App() {
         <p className='paragrafh'>Preencha os dados do cadastro para acessar</p>
 
         <p className='principal'>Nome completo: </p>
-        <br />
+
         <input
           type="text"
           name="nome"
-          placeholder="Nome"
+          placeholder="Nome completo"
           className="register--input"
         />
         <hr className='linha' />
@@ -54,13 +61,14 @@ function App() {
         />
         <hr className='linha' />
 
-
         <p className='principal'>  Telefone:</p>
-        <input
-          type="number"
+        <Input
+          type="tel"
+          data-js="phone"
           name="telefone"
           placeholder="Telefone"
           className="register--input"
+          maxlength='13'
         />
         <hr className='linha' />
 
