@@ -1,12 +1,27 @@
-//import { useState } from 'react';
+import React from 'react';
 import './App.css';
-import InputMask from 'react-input-mask';
+//import InputMask from 'react-input-mask';
+import { useState } from "react";
 
 
 function App() {
-  const Input = (props) => (
-    <InputMask mask="(99) 99999-9999" value={ props.value } onChange={ props.onChange } />
-  );
+  const [values, setValues] = useState();
+
+  const handleChangeValues = (value) => {
+    setValues((prevValue) => ({
+      ...prevValue,
+      [value.target.name]: value.target.value,
+    }));
+  };
+
+  const handleClickButton = () => {
+    console.log(values)
+  };
+
+
+  /* const Input = (props) => (
+     <InputMask mask="(99) 99999-9999" value={ props.value } onChange={ props.onChange } />
+   );*/
 
   return (
     <div className="app-container">
@@ -21,15 +36,18 @@ function App() {
           name="nome"
           placeholder="Nome completo"
           className="register--input"
+          onChange={ handleChangeValues }
         />
         <hr className='linha' />
 
         <p className='principal'> Email: </p>
+
         <input
           type="email"
           name="email"
           placeholder="E-mail"
           className="register--input"
+          onChange={ handleChangeValues }
         />
         <hr className='linha' />
 
@@ -39,6 +57,7 @@ function App() {
           type="date"
           name="data"
           className="register--input"
+          onChange={ handleChangeValues }
         />
         <hr className='linha' />
 
@@ -46,8 +65,9 @@ function App() {
         <input
           type="text"
           name="cidade"
-          placeholder="cidade"
+          placeholder="Cidade"
           className="register--input"
+          onChange={ handleChangeValues }
         />
         <hr className='linha' />
 
@@ -58,24 +78,26 @@ function App() {
           name="endereço"
           placeholder="Endereço"
           className="register--input"
+          onChange={ handleChangeValues }
         />
         <hr className='linha' />
 
         <p className='principal'>  Telefone:</p>
-        <Input
+        <input
           type="tel"
           data-js="phone"
           name="telefone"
           placeholder="Telefone"
           className="register--input"
-          maxlength='13'
+          maxLength='13'
+          onChange={ handleChangeValues }
         />
         <hr className='linha' />
 
-        <button className='container--button'>Cadastrar</button>
+        <button className="container--button" onClick={ handleClickButton }>Cadastrar</button>
       </div>
 
-    </div>
+    </div >
   );
 }
 

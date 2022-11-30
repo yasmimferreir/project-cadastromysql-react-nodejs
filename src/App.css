@@ -90,7 +90,6 @@ input[type="date"] {
   font-size: 0.9rem;
   outline: none;
   margin-top: 0.4rem;
-  color: rgba(0, 0, 0, 0.5);
 }
 
 ::-webkit-calendar-picker-indicator {
@@ -121,4 +120,180 @@ button {
   letter-spacing: 0.46px;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+/*media */
+
+@media (max-width: 1348px) {
+  .register--container {
+    width: 58%;
+    height: 56rem;
+    margin: 8rem 0 0 10rem;
+  }
+
+  .title {
+    margin: 3rem 0 0 10rem;
+  }
+
+  span {
+    padding-left: 0.3rem;
+  }
+
+  .paragrafh {
+    margin: 2.6rem 0 0 8rem;
+  }
+}
+
+@media (max-width: 990px) {
+  .register--container {
+    width: 58%;
+    height: 56rem;
+    margin: 8rem 0 0 10rem;
+  }
+
+  .title {
+    margin: 3rem 0 0 8rem;
+  }
+
+  span {
+    padding-left: 0.3rem;
+  }
+
+  .paragrafh {
+    margin: 2.6rem 0 0 4.5rem;
+  }
+
+  button {
+    margin: 3.6rem 0 0 7rem;
+  }
+}
+
+@media (max-width: 859px) {
+  .register--container {
+    width: 69%;
+    height: 50rem;
+    margin: 2rem 2rem 2rem 8rem;
+  }
+
+  .title {
+    font-size: 1.6rem;
+  }
+
+  .paragrafh {
+    font-size: 1.2rem;
+  }
+
+  .principal {
+    font-size: 1rem;
+  }
+
+  .register--input {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+
+  Input {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+
+  input[type="date"] {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+
+  button {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 859px) {
+  .register--container {
+    width: 65%;
+    height: 65rem;
+    margin: 4rem 0 0 2.5rem;
+  }
+}
+
+@media (max-width: 702px) {
+  .title {
+    font-size: 1.3rem;
+  }
+
+  .paragrafh {
+    font-size: 1rem;
+  }
+
+  .principal {
+    font-size: 0.9rem;
+  }
+
+  .register--input {
+    font-size: 0.9rem;
+    margin-top: 1rem;
+  }
+
+  .linha {
+    width: 18em;
+  }
+
+  Input {
+    font-size: 0.9rem;
+    margin-top: 1rem;
+  }
+
+  input[type="date"] {
+    font-size: 0.9rem;
+    margin-top: 1rem;
+  }
+
+  button {
+    margin: 3rem 0 0 4rem;
+  }
+}
+
+@media (max-width: 556px) {
+  .register--container {
+    margin: 2rem 0 0 2rem;
+  }
+
+  .title {
+    margin: 3rem 0 0 2.9rem;
+  }
+
+  /*span {
+   
+    padding-left: 0.6rem;
+   
+  }*/
+
+  .paragrafh {
+    margin: 2rem 0 0 0.1rem;
+  }
+
+  .principal {
+    padding: 2rem 0 0 2rem;
+  }
+
+  .linha {
+    margin-left: 2rem;
+  }
+
+  input {
+    margin-left: 2rem;
+  }
+
+  button {
+    width: 15rem;
+    height: 2rem;
+    margin: 3.6rem 0 0 2.7rem;
+  }
+}
+
+@media (max-width: 412px) {
+  .register--container {
+    width: 90%;
+    height: 50rem;
+    margin: 1rem 0 0 1.4rem;
+  }
 }
