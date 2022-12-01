@@ -24,7 +24,7 @@
   align-items: flex-end;
   font-style: italic;
   position: relative;
-  margin: 3rem 0 0 15rem;
+  margin: 3rem 0 0 10rem;
   font-weight: 600;
   font-size: 1.7rem;
   line-height: 29px;
@@ -45,7 +45,7 @@ span {
   align-items: center;
   text-align: center;
   position: relative;
-  margin: 2.6rem 0 0 12rem;
+  margin: 2rem 0 0 7rem;
   font-style: normal;
   font-weight: 400;
   font-size: 1.1rem;

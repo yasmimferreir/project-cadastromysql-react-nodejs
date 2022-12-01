@@ -15,7 +15,7 @@ function App() {
   };
 
   const handleClickButton = () => {
-    console.log(values)
+    console.log(values);
   };
 
 
