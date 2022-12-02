@@ -1,19 +1,10 @@
 
-##  ProjetoCadastro-Client 
+##  ProjetoCadastro-FullStack
 
 ### 📑Explicação
 
-Primeira parte do projeto, Front-end desenvolvido com ReactJs e inspiração do Desing Figma. Tela de cadastro de usuários, renderização de dados,
-confirmação dos dados.
-<br>
 Projeto em desenvolvimento focado nas habilidades Full Stack, utilização no Front-end biblioteca ReactJs, back-end NodeJs, banco de dados relacional SQL.
 Desenvolvimento de tela de cadastro é confirmação dos dados,  será usado banco de dados SQL, para o armazemamento de dados referentes. Pretendo usar ****AWS Lambda.****
-<br>
-<hr>
-
-###  🚀 Aplicação Front-end 
-<img src="https://user-images.githubusercontent.com/97356148/205087174-493f1c7f-82e3-48a4-9a1a-4ac0d4901dff.png" width="640px" >
-> Imagem projeto
 <br>
 <hr>
 
@@ -24,7 +15,6 @@ Desenvolvimento de tela de cadastro é confirmação dos dados,  será usado ban
 ```jsx
 npx create-react-app 
 ```
-
 
 <img src="https://user-images.githubusercontent.com/97356148/205091241-9735cbe0-17b9-4a35-8bff-0ca8e6bc0c5d.png" width="50px">
 
@@ -85,4 +75,4 @@ Quer fazer parte desse projeto? Clique [AQUI](CONTRIBUTING.md) e leia como contr
 
 Esse projeto está sob licença. Veja o arquivo [LICENÇA](LICENSE.md) para mais detalhes.
 
-[⬆ Voltar ao topo](#ProjetoCadastro-Client)<br>
+[⬆ Voltar ao topo](#ProjetoCadastro-FullStack)<br>
