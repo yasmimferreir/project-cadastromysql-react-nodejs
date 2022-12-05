@@ -1,11 +1,13 @@
 import React from 'react';
 import './App.css';
-//import InputMask from 'react-input-mask';
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import Card from './components/cards/cards';
+import Axios from "axios";
 
 
 function App() {
   const [values, setValues] = useState();
+  const [listCadastro, setListCadastro] = useState();
 
   const handleChangeValues = (value) => {
     setValues((prevValue) => ({
@@ -15,13 +17,23 @@ function App() {
   };
 
   const handleClickButton = () => {
-    console.log(values);
+    Axios.post("http://localhost:3001/register", {
+      nome: values.nome,
+      email: values.email,
+      data: values.data,
+      cidade: values.cidade,
+      endereço: values.endereço,
+      telefone: values.telefone
+    }).then((response) => {
+      console.log(response);
+    })
   };
 
-
-  /* const Input = (props) => (
-     <InputMask mask="(99) 99999-9999" value={ props.value } onChange={ props.onChange } />
-   );*/
+  useEffect(() => {
+    Axios.get("http://localhost:3001/getCards").then((response) => {
+      setListCadastro(response.data);
+    });
+  }, []);
 
   return (
     <div className="app-container">
@@ -96,6 +108,11 @@ function App() {
 
         <button className="container--button" onClick={ handleClickButton }>Cadastrar</button>
       </div>
+
+      { typeof listCadastro !== "undefined" &&
+        listCadastro.map((value) => {
+          return <Card />
+        }) }
 
     </div >
   );
