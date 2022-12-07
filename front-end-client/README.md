@@ -6,8 +6,7 @@
 Primeira parte do projeto, Front-end desenvolvido com ReactJs e inspiração do Desing Figma. Tela de cadastro de usuários, renderização de dados,
 confirmação dos dados.
 <br>
-Projeto em desenvolvimento focado nas habilidades Full Stack, utilização no Front-end biblioteca ReactJs, Hooks useStates, back-end NodeJs, 
-Cliente HTTP Axios para o navegador NodeJs, banco de dados relacional SQL.
+Projeto em desenvolvimento focado nas habilidades Full Stack, utilização no Front-end biblioteca ReactJs, back-end NodeJs, banco de dados relacional SQL.
 Desenvolvimento de tela de cadastro é confirmação dos dados,  será usado banco de dados SQL, para o armazemamento de dados referentes. Pretendo usar ****AWS Lambda.****
 <br>
 <hr>
@@ -33,18 +32,6 @@ Desenvolvimento de tela de cadastro é confirmação dos dados,  será usado ban
 $ yarn 
 ```
 <br>
-
-<img src="https://user-images.githubusercontent.com/97356148/206260034-f9e75cdd-cb1d-41fe-9606-9e543e6fb96c.svg" width="50px">
-
-```jsx
-$ yarn add axios
-```
-<br>
-
-
-
-
-
 
 ## 💻 Pré-requisitos
 
