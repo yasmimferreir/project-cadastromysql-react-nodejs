@@ -31,6 +31,14 @@ $ yarn add axios
 ```
 <br>
 
+<img src="https://user-images.githubusercontent.com/97356148/206262186-2aeed133-b96d-4982-a90f-7a074fa2bd0a.png" width="50px">
+
+```jsx
+$ npm install mysql
+```
+<br>
+
+
 
 ## 💻 Pré-requisitos
 
