@@ -1,5 +1,6 @@
 .app--container {
   display: flex;
+  position: absolute;
   flex-direction: column;
   align-items: center;
   background-color: #ffffff;
@@ -7,10 +8,9 @@
 
 .register--container {
   display: inline-block;
-  margin: 8rem 0 0 26rem;
+  margin: 4rem 0 0 26rem;
   padding: 10px 20px;
   border-radius: 5px;
-  margin-top: 5rem;
   width: 48%;
   height: 46rem;
   background-color: white;
@@ -75,7 +75,7 @@ span {
 
 .linha {
   position: relative;
-  width: 25em;
+  width: 34em;
   margin-left: 4rem;
 }
 

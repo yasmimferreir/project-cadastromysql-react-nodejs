@@ -41,10 +41,6 @@ app.get("/getCards", (req, res) => {
 });
 
 
-/*app.get("/", (req, res) => {
-    res.send("hello word")
-});*/
-
 app.listen(3001, () => {
     console.log("🛰️ Rodando servidor")
 });

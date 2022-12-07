@@ -22,7 +22,7 @@ function App() {
       email: values.email,
       data: values.data,
       cidade: values.cidade,
-      endereço: values.endereço,
+      endereco: values.endereco,
       telefone: values.telefone
     }).then((response) => {
       console.log(response);
@@ -87,7 +87,7 @@ function App() {
           Endereço:</p>
         <input
           type="text"
-          name="endereço"
+          name="endereco"
           placeholder="Endereço"
           className="register--input"
           onChange={ handleChangeValues }
@@ -111,7 +111,16 @@ function App() {
 
       { typeof listCadastro !== "undefined" &&
         listCadastro.map((value) => {
-          return <Card />
+          return <Card key={ value.id }
+            listCard={ listCadastro } setListCard={ setListCadastro }
+            id={ value.id }
+            nome={ value.nome }
+            email={ value.email }
+            data={ value.data }
+            cidade={ value.cidade }
+            endereco={ value.endereco }
+            telefone={ value.telefone }
+          />
         }) }
 
     </div >

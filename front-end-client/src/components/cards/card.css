@@ -1,0 +1,46 @@
+.card--container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.container--confirm {
+    display: inline-block;
+    margin: 4rem 0 0 6rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 48%;
+    height: 24rem;
+    background-color: white;
+    box-shadow: rgba(47, 106, 179, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    margin-bottom: 3.4rem;
+}
+
+.container--paragrafh {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin: 1rem 0 0 12rem;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 19px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.card {
+    display: flex;
+
+    width: 20rem;
+    margin: 0.6rem 3rem 0 4rem;
+    font-style: italic;
+    position: relative;
+    font-weight: 600;
+    font-size: 0.8rem;
+    line-height: 29px;
+    color: #7c7979;
+
+}
