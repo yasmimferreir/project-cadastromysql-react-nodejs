@@ -38,6 +38,12 @@ $ npm install mysql
 ```
 <br>
 
+<img src="https://user-images.githubusercontent.com/97356148/206527131-03926451-f695-40bf-816b-132fcf07d085.png" width="50px">
+
+```jsx
+$ yarn add @material-ui/core
+```
+<br>
 
 
 ## 💻 Pré-requisitos

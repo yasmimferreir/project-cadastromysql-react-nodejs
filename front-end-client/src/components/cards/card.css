@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items: center;
     background-color: #ffffff;
+
 }
 
 .container--confirm {
@@ -16,6 +17,13 @@
     box-shadow: rgba(47, 106, 179, 0.35) 0px 5px 15px;
     border-radius: 10px;
     margin-bottom: 3.4rem;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.container--confirm:hover {
+    background-color: #fcf9f9;
+    transition: all 1s;
 }
 
 .container--paragrafh {
@@ -33,7 +41,6 @@
 
 .card {
     display: flex;
-
     width: 20rem;
     margin: 0.6rem 3rem 0 4rem;
     font-style: italic;
@@ -42,5 +49,4 @@
     font-size: 0.8rem;
     line-height: 29px;
     color: #7c7979;
-
 }

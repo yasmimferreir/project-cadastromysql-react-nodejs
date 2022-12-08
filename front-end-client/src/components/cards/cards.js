@@ -1,20 +1,26 @@
 import React from "react";
 import "../cards/card.css";
+import FormDialog from "../dialog/dialog";
 
 function Card(props) {
+    const [open, setOpen] = React.useState(true);
+
     return (
-        <div className="card--container">
-            <div className="container--confirm">
-                <h1 className="title"> Confirmação dos <span>Dados</span></h1>
-                <p className='container--paragrafh'>Confira os dados referentes</p>
-                <p className="card">Nome completo:  { nome }</p>
-                <p className="card"> Email:  { email }</p>
-                <p className="card">Data de Nascimento:  { data }</p>
-                <p className="card">  Cidade:  { cidade }</p>
-                <p className="card"> Endereço: { endereco }</p>
-                <p className="card">Telefone:  { telefone }</p>
-            </div>
-        </div >
+        <>
+            <FormDialog open={ open } setOpen={ setOpen } />
+            <div className="card--container">
+                <div className="container--confirm">
+                    <h1 className="title"> Confirmação dos <span>Dados</span></h1>
+                    <p className='container--paragrafh'>Confira os dados referentes</p>
+                    <p className="card">Nome completo:  { props.nome }</p>
+                    <p className="card"> Email:  { props.email }</p>
+                    <p className="card">Data de Nascimento:  { props.data }</p>
+                    <p className="card">  Cidade:  { props.cidade }</p>
+                    <p className="card"> Endereço: { props.endereco }</p>
+                    <p className="card">Telefone:  { props.telefone }</p>
+                </div>
+            </div >
+        </>
     )
 }
 
