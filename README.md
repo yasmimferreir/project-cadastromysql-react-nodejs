@@ -11,7 +11,7 @@ Desenvolvimento de tela de cadastro é confirmação dos dados,  será usado ban
 
 ###   📚Utilização
 
- <img src="https://user-images.githubusercontent.com/97356148/205089799-826af21f-a1e4-4bbe-aadf-9286d61de8e5.png" width="40px">
+ <img src="https://user-images.githubusercontent.com/97356148/205089799-826af21f-a1e4-4bbe-aadf-9286d61de8e5.png" width="29px">
 
 ```jsx
 $ npx create-react-app 
@@ -38,7 +38,7 @@ $ npm install mysql
 ```
 <br>
 
-<img src="https://user-images.githubusercontent.com/97356148/206527131-03926451-f695-40bf-816b-132fcf07d085.png" width="50px">
+<img src="https://user-images.githubusercontent.com/97356148/206527131-03926451-f695-40bf-816b-132fcf07d085.png" width="120px">
 
 ```jsx
 $ yarn add @material-ui/core
