@@ -42,7 +42,7 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
 ## 🚀 Instalando o projeto 
 
-Para instalar o Quiz, siga estas etapas:
+Para instalar o projeto, siga estas etapas:
 
 Windows: <br>
 git clone `url`.
