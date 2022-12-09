@@ -66,7 +66,7 @@ function App() {
 
         <p className='principal'>Data de nascimento: </p>
         <input
-          type="date"
+          type="number"
           name="data"
           className="register--input"
           onChange={ handleChangeValues }
@@ -109,11 +109,12 @@ function App() {
         <button className="container--button" onClick={ handleClickButton }>Cadastrar</button>
       </div>
 
+
       { typeof listCadastro !== "undefined" &&
         listCadastro.map((value) => {
           return <Card key={ value.id }
             listCard={ listCadastro } setListCard={ setListCadastro }
-            id={ value.id }
+            id={ value.idtabcadastro }
             nome={ value.nome }
             email={ value.email }
             data={ value.data }

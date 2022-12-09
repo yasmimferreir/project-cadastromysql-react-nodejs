@@ -10,45 +10,43 @@ import Axios from "axios";
 
 
 export default function FormDialog(props) {
-
     const [editValues, setEditValues] = useState({
         id: props.id,
         nome: props.nome,
         email: props.email,
         data: props.data,
         cidade: props.cidade,
-        endereço: props.endereço,
-        telefone: props.telefone,
+        endereco: props.endereco,
+        telefone: props.telefone
     });
 
-    const handleEditCrud = () => {
+    const handleEditCadastro = () => {
         Axios.put("http://localhost:3001/edit", {
             id: editValues.id,
             nome: editValues.nome,
             email: editValues.email,
             data: editValues.data,
             cidade: editValues.cidade,
-            endereço: editValues.endereço,
-            telefone: editValues.telefone,
+            endereco: editValues.endereco,
+            telefone: editValues.telefone
         });
         handleClose();
     };
 
-    const handleDelete = () => {
-        Axios.delete(`http://localhost:3001/delete/${editValues.id}`);
-        handleClose();
-    };
+    /* const handleClickOpen = () => {
+         props.setOpen(true)
+     };*/
 
     const handleClose = () => {
         props.setOpen(false);
     };
 
-    const handleChangeValues = (value) => {
-        setEditValues((prevValues) => ({
+    const handleChangeValues = value => {
+        setEditValues(prevValues => ({
             ...prevValues,
             [value.target.id]: value.target.value,
-        }));
-    };
+        }))
+    }
 
     return (
         <Dialog
@@ -63,8 +61,8 @@ export default function FormDialog(props) {
                     margin="dense"
                     id="nome"
                     label="Nome completo"
-                    onChange={ handleChangeValues }
                     defaultValue={ props.nome }
+                    onChange={ handleChangeValues }
                     type="text"
                     fullWidth
                 />
@@ -74,8 +72,8 @@ export default function FormDialog(props) {
                     margin="dense"
                     id="email"
                     label="email"
-                    onChange={ handleChangeValues }
                     defaultValue={ props.email }
+                    onChange={ handleChangeValues }
                     type="email"
                     fullWidth
                 />
@@ -85,8 +83,8 @@ export default function FormDialog(props) {
                     margin="dense"
                     id="data"
                     label="data de nascimento"
-                    onChange={ handleChangeValues }
                     defaultValue={ props.data }
+                    onChange={ handleChangeValues }
                     type="tele"
                     fullWidth
                 />
@@ -96,8 +94,8 @@ export default function FormDialog(props) {
                     margin="dense"
                     id="cidade"
                     label="cidade"
-                    onChange={ handleChangeValues }
                     defaultValue={ props.cidade }
+                    onChange={ handleChangeValues }
                     type="text"
                     fullWidth
                 />
@@ -107,8 +105,8 @@ export default function FormDialog(props) {
                     margin="dense"
                     id="endereço"
                     label="endereço"
+                    defaultValue={ props.endereco }
                     onChange={ handleChangeValues }
-                    defaultValue={ props.endereço }
                     type="text"
                     fullWidth
                 />
@@ -118,8 +116,8 @@ export default function FormDialog(props) {
                     margin="dense"
                     id="telefone"
                     label="telefone"
-                    onChange={ handleChangeValues }
                     defaultValue={ props.telefone }
+                    onChange={ handleChangeValues }
                     type="tele"
                     fullWidth
                 />
@@ -129,11 +127,11 @@ export default function FormDialog(props) {
                         cancel
                     </Button>
 
-                    <Button onClick={ handleDelete } color="primary">
+                    <Button onClick={ handleClose } color="primary">
                         Excluir
                     </Button>
 
-                    <Button onClick={ handleEditCrud } color="primary">
+                    <Button onClick={ handleEditCadastro } color="primary">
                         Salvar
                     </Button>
 
