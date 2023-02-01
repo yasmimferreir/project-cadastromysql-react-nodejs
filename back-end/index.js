@@ -6,9 +6,9 @@ const cors = require("cors");
 
 const db = mysql.createPool({
     host: "localhost",
-    user: "root",
-    port: "3307",
-    password: "root159",
+    user: "",
+    port: "",
+    password: "",
     database: "cadastro"
 });
 
